@@ -18,5 +18,10 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', include('apps.Ingenieria.urls')),
+    url(r'^$', include('apps.Proyecto.urls')),
+    url(r'^ingenieria/', include('apps.Ingenieria.urls', namespace="Ingenieria")),
+    url(r'^alcances/', include('apps.Alcance.urls', namespace="Alcances")),
+    url(r'^manodeobra/', include('apps.ManoDeObra.urls', namespace="ManoDeObra")),
+    url(r'^manufactura/', include('apps.Manufactura.urls', namespace="Manufactura")),
+    #url(r'^Ingenieria/', include('apps.Ingenieria.urls')),
 ]

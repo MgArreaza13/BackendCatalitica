@@ -4,5 +4,5 @@ from django.contrib import admin
 from apps.Ingenieria.views import homeingenieria
 
 urlpatterns = [
-    url(r'^$', homeingenieria, name='home'),
+    url(r'^(?P<nombre_proyecto>[^/]+)/$', homeingenieria, name='home'),
 ]

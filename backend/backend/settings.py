@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.GastosViajes',
     'apps.HerramientasYEquipos',
     'apps.ManoDeObra',
+    'apps.Manufactura',
     'apps.Ingenieria',
     'apps.Proyecto',
     'apps.ResumenC',
@@ -111,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-us'
 
 TIME_ZONE = 'UTC'
 
