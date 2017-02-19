@@ -149,25 +149,23 @@
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i>Principal</a>
+                        <a href="{% url 'Alcances:ListaDeAlcance' proyecto.Nombre %}"><i class="fa fa-fw fa-dashboard"></i>Alcances</a>
                     </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Progreso </a>
-                    </li>
+                    
                     <li>
                         <a href="HerramientasYEquipos.html"><i class="fa fa-fw fa-table"></i>Herramientas y Equipos</a>
                     </li>
-                    <li  class="active">
-                        <a href="Ingenieria.html"><i class="fa fa-fw fa-table"></i>Ingenieria</a>
+                    <li class="active">
+                        <a href="{% url 'Ingenieria:ListaDeIngenieria' proyecto.Nombre %}"><i class="fa fa-fw fa-table"></i>Ingenieria</a>
                     </li>
                     <li>
-                        <a href="Manufactura.html"><i class="fa fa-fw fa-table"></i>Manufactura</a>
+                        <a href="{% url 'Manufactura:ListaManufactura' proyecto.Nombre %}"><i class="fa fa-fw fa-table"></i>Manufactura</a>
                     </li>
-                    <li>
-                        <a href="MOINST.html"><i class="fa fa-fw fa-table"></i>M. O. INST.</a>
+                    <li >
+                        <a href="{% url 'ManoDeObra:ListaManoDeObra' proyecto.Nombre %}"><i class="fa fa-fw fa-table"></i>M. O. INST.</a>
                     </li>
                     <li>
                         <a href="GViaje.html"><i class="fa fa-fw fa-table"></i>G. Viaje</a>

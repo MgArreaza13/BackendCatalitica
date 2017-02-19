@@ -152,20 +152,20 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i>Alcances</a>
+                        <a href="{% url 'Alcances:ListaDeAlcance' proyecto.Nombre %}"><i class="fa fa-fw fa-dashboard"></i>Alcances</a>
                     </li>
                     
                     <li>
                         <a href="HerramientasYEquipos.html"><i class="fa fa-fw fa-table"></i>Herramientas y Equipos</a>
                     </li>
                     <li>
-                        <a href="Ingenieria.html"><i class="fa fa-fw fa-table"></i>Ingenieria</a>
+                        <a href="{% url 'Ingenieria:ListaDeIngenieria' proyecto.Nombre %}"><i class="fa fa-fw fa-table"></i>Ingenieria</a>
                     </li>
                     <li>
-                        <a href="Manufactura.html"><i class="fa fa-fw fa-table"></i>Manufactura</a>
+                        <a href="{% url 'Manufactura:ListaManufactura' proyecto.Nombre %}"><i class="fa fa-fw fa-table"></i>Manufactura</a>
                     </li>
                     <li >
-                        <a href="MOINST.html"><i class="fa fa-fw fa-table"></i>M. O. INST.</a>
+                        <a href="{% url 'ManoDeObra:ListaManoDeObra' proyecto.Nombre %}"><i class="fa fa-fw fa-table"></i>M. O. INST.</a>
                     </li>
                     <li>
                         <a href="GViaje.html"><i class="fa fa-fw fa-table"></i>G. Viaje</a>
@@ -203,7 +203,7 @@
                                 <i class="fa fa-dashboard"></i>  <a href="index.html">Principal</a>
                             </li>
                             <li class="active">
-                                <i class="fa fa-table"></i> Lista de Alcances del proyecto
+                                <i class="fa fa-table"></i> Lista de Alcances del proyecto {{proyecto.Nombre}}
                             </li>
                         </ol>
                     </div>
