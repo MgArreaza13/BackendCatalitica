@@ -64,3 +64,6 @@ class DatosManufactura (models.Model):
 
 	def __str__(self):
 		return self.Concepto
+
+class TotalManufactura(models.Model):
+	Total =  models.DecimalField(default=0 , null=False, max_digits=19, decimal_places=1)
