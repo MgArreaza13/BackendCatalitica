@@ -1,0 +1,44 @@
+https://docs.djangoproject.com/en/1.10/ref/forms/fields/#django.forms.DecimalField
+https://tutorial.djangogirls.org/es/django_forms/
+https://www.google.co.ve/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=calcular+datos+django+&*
+http://pvilas.com/2012/10/campos-calculados-en-django.html
+http://permalink.gmane.org/gmane.org.user-groups.python.argentina/32884
+http://pyar.python.org.narkive.com/ZfkEWueJ/django-acceso-a-un-campo-calculado-desde-una-vista
+https://groups.google.com/forum/#!topic/django-es/TpQD-GGSaEY
+https://github.com/loro102/rumbo
+http://www.tutorialspoint.com/python/python_dictionary.htm
+https://docs.djangoproject.com/en/dev/ref/models/querysets/#aggregate
+http://stackoverflow.com/questions/1471909/django-model-delete-not-triggered
+https://github.com/loro102/rumbo/blob/master/principal/views.py
+https://tutorial.djangogirls.org/es/django_templates/
+http://stackoverflow.com/questions/8107002/django-core-exceptions-fielderror-unknown-fields-y-b-d-o
+
+
+IMPORTANTE 
+
+***http://stackoverflow.com/questions/13014411/django-post-save-signal-implementation#13016982***
+
+
+
+
+
+
+
+
+
+
+
+
+
+buenas tardes comunidad, la situacion es la siguente, tengo un proyecto en Django 1.10 en el cual se trabaja con unos
+ciertos datos y se necesitan generar 2 costos totales por asi decirlo, uno que un Costo total de la empresa, y el otro
+llamado costo de Venta, con el cual se negociara, eso en varias areas, pero la duda que tengo es la siguiente
+ya yo tengo las mayorias de los modelos listos, y como son muchos datos por registro, yo guardo totales de los registros
+particulares, pero no encuentro como hacer para crear un solo modelo que me guarde el total de toda la base de datos, me entienden?
+
+quiero hacer un modelo que me guarde toda la sumatoria de los modelos anteriores, intente pasarle los datos por la vista al modelo
+pero como los particulares son campos calculdos dentro del modelo particular, no me deja, me levanta un error que dice fiel desconocido
+
+alguien tiene idea de como hacer un acumulador? que vaya acumulando los totales luego de ejecutarse el post del formulario?
+no se como capturar ese dato ya que en realidad para django es como no existiera, porque se crea una vez se guarda en la base de datos
+y no quiero hacer toda la logica de nuevo en la vista.

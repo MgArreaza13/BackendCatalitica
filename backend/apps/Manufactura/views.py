@@ -8,7 +8,8 @@ from apps.Manufactura.forms import ManufacturaForm
 def ManufacturaLista (request, nombre_proyecto):
 	proyecto = NombreDeProyecto.objects.get(Nombre = nombre_proyecto)
 	ManufacturaDatos = DatosManufactura.objects.filter(Proyecto__Nombre=nombre_proyecto)
-	return render (request, 'Manufactura.html' , {'ManufacturaDatos':ManufacturaDatos , 'proyecto':proyecto})
+	total 			 = TotalManufactura.objects.get(id=1)	
+	return render (request, 'Manufactura.html' , {'ManufacturaDatos':ManufacturaDatos , 'proyecto':proyecto, 'total':total})
 
 
 def agg(request, nombre_proyecto):
@@ -19,7 +20,6 @@ def agg(request, nombre_proyecto):
 	if request.method == 'POST':
 		form = ManufacturaForm(request.POST)
 		if form.is_valid():
-			totalM.Total = totalM + form.TotalGen['POST']
 			totalM.save()
 			form.save()
 			return render(request, "nuevo.html", {'form':form})
